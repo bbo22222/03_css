@@ -1,0 +1,22 @@
+.bar {
+    background: #fb923c;
+    color: white;
+    margin: 6px 0;
+    padding: 4px 8px;
+}
+
+.parent-wide{ width: 500px; border: 2px dashed #94a3b8;}
+.px{ width: 200px;}  /*px 는 절대값으로 변하지 않음*/
+.percent{width: 50%;}
+
+.parent-narrow{ background: cyan; width: 300px;}
+/*  %단위를 쓸 때에는 부모의 크기가 고정되어져 있는 상태에서 쓰는 게 좋음->내 의도대로 쓰기 위해*/
+
+html{ font-size: 16px; } /*<- 안 쓰더라도 브라우저 기본값으로 font-size 16px이 들어가 있음*/
+.box{ font-size: 20px;}
+.em {font-style:1.5em;}/*부모인 .box.. div의 글자크기인 20px의 1.5배*/
+.rem {font-size: 1.5rem;}
+                     /* 부모는 무시하고, 최상단의 html의 font-size만 바꾸면
+                     화면 전체에 존재하는 폰트 크기가 일괄 변경 됨
+                      */
+.vw {width: 50vw;}

@@ -1,0 +1,32 @@
+*{box-sizing: border-box;}
+
+.FLEX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18pt;
+    margin: 0px 20px 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px
+}
+
+nav a {
+    color: inherit; /*inherit  부모색을 상속 받겠다*/
+    text-decoration: none; /*하이퍼링크 밑줄 없애기*/}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;}
+.course {
+    padding: 50px;
+    background: #fff7ed;
+    border-radius: 18px;
+    border: 2px solid #fdba74;}
